@@ -93,6 +93,7 @@ public class CamTest extends JFrame{
             */
             int[] pixelInput = new int[imgWidth * imgHeight];
             int[] pixelOutput = new int[imgWidth * imgHeight];
+            int[] greyValue = new int[imgWidth * imgHeight];
             PixelGrabber pg = new PixelGrabber(img, 0, 0, imgWidth, imgHeight, pixelInput, 0, imgWidth);
 
             // grab pixel into grabber
@@ -103,6 +104,7 @@ public class CamTest extends JFrame{
             for (y = 0; y < imgHeight; y++){
                 for (x = 0; x < imgWidth; x++){
                     value = RGBtoGray(pixelInput[y*imgWidth + x]);
+                    greyValue [y * imgWidth + x] = value;
                     pixelOutput[y*imgWidth + x] = 0xFF000000 + value * 0x00010101;
                 }
             }
@@ -110,6 +112,28 @@ public class CamTest extends JFrame{
             Image imgOutput = createImage(new MemoryImageSource(imgWidth, imgHeight, pixelOutput, 0, imgWidth));
 
             g.drawImage(imgOutput, 0, 0, imgWidth, imgHeight, null, null);
+
+            // avg filter
+            int filterRadious = 80;
+            int[] avgOutput = new int[(int)(imgWidth * imgHeight / (filterRadious * filterRadious))];
+            int bx, by, avg;
+            for (y = 0; y < imgHeight / filterRadious; y++){
+                for (x = 0; x < imgWidth / filterRadious; x++){
+                    by = y * filterRadious;
+                    bx = x * filterRadious;
+                    avg = 0;
+                    for (by = y * filterRadious; by < ( y + 1 ) * filterRadious; by++){
+                        for (bx = x * filterRadious; bx < ( x + 1 ) * filterRadious; bx++){
+                            avg += greyValue[by * imgWidth + bx];
+                        }
+                    }
+                    avg /= filterRadious * filterRadious;
+                    avgOutput[y * (imgWidth / filterRadious) + x] = avg;
+                    System.out.print(avg + "\t");
+                }
+                System.out.print("\n");
+            }
+
 
             // save image to disk
             ImageIO.write(buffImg, "png", new File("c:/demo.jpg"));
