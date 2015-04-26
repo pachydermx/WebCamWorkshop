@@ -1,6 +1,15 @@
+import java.io.*;
+import java.util.*;
+import java.awt.*;
 import java.awt.BorderLayout;
 import java.awt.Component;
+import java.awt.image.*;
+import javax.imageio.*;
+import javax.media.*;
 import javax.media.CaptureDeviceInfo;
+import javax.media.control.*;
+import javax.media.format.*;
+import javax.media.util.*;
 import javax.media.Manager;
 import javax.media.MediaLocator;
 import javax.media.Player;
@@ -14,7 +23,7 @@ public class CamTest extends JFrame{
 	private Component component = null;
 	private JPanel vedioPanel = null;
 	
-    String   deviceName   =   "vfw:Microsoft WDM Image Capture (Win32):0";    //获取本地摄像头的字符串
+    String   deviceName   =   "vfw:Microsoft WDM Image Capture (Win32):0";
     // Creates a new instance of CameraTest 
     public CamTest() {
         init();
@@ -45,5 +54,35 @@ public class CamTest extends JFrame{
     
     public static void main(String[] args) {
         new CamTest();
+
+        try {
+            // picture capture
+
+            // wait for camera launching
+            Thread.sleep(10000);
+            System.out.println("captured");
+            // grab a frame from cam
+            FrameGrabbingControl frameGrabber = (FrameGrabbingControl)player.getControl("javax.media.control.FrameGrabbingControl");
+            Buffer buf = frameGrabber.grabFrame();
+            // convert frame to an buffered image
+            Image img = (new BufferToImage((VideoFormat) buf.getFormat()).createImage(buf));
+            BufferedImage buffImg = new BufferedImage(img.getWidth(null), img.getHeight(null), BufferedImage.TYPE_INT_RGB);
+            Graphics2D g = buffImg.createGraphics();
+            g.drawImage(img, null, null);
+
+            /*
+            // Overlay curent time on image
+            g.setColor(Color.RED);
+            g.setFont(new Font("Verdana", Font.BOLD, 16));
+            g.drawString((new Date()).toString(), 10, 25);
+            System.out.println("Woww.. Captured Image");
+            */
+
+            // save image to disk
+            ImageIO.write(buffImg, "png", new File("c:/demo.jpg"));
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+
     }
 }
