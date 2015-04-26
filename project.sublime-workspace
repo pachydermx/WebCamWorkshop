@@ -1,0 +1,945 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"selec",
+				"select_name"
+			],
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"hei",
+				"heights"
+			],
+			[
+				"cu",
+				"current_column"
+			],
+			[
+				"co",
+				"current_column"
+			],
+			[
+				"boder",
+				"border"
+			],
+			[
+				"pad",
+				"padding-left"
+			],
+			[
+				"arti",
+				"article_title"
+			],
+			[
+				"foot",
+				"footer_inner_frame"
+			],
+			[
+				"scrtop",
+				"scrollTop"
+			],
+			[
+				"min",
+				"min_column"
+			],
+			[
+				"post_poo",
+				"post_pool_column_"
+			],
+			[
+				"fil",
+				"fill_post_at"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"ar",
+				"Arial"
+			],
+			[
+				"fill",
+				"fill_post"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"ma",
+				"margin"
+			],
+			[
+				"fon",
+				"font-family"
+			],
+			[
+				"bo",
+				"border"
+			],
+			[
+				"bra",
+				"breadcrumb_nav_item"
+			],
+			[
+				"fo",
+				"font-family"
+			],
+			[
+				"margi",
+				"margin"
+			],
+			[
+				"del",
+				"deltaY"
+			],
+			[
+				"load",
+				"load_page"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"back",
+				"background-image"
+			],
+			[
+				"setin",
+				"set_indicator"
+			],
+			[
+				"resu",
+				"result"
+			],
+			[
+				"ele",
+				"elements"
+			],
+			[
+				"elepr",
+				"eleProcessor"
+			],
+			[
+				"elem",
+				"element"
+			],
+			[
+				"sub",
+				"sub_calc"
+			],
+			[
+				"els",
+				"elements"
+			],
+			[
+				"opes",
+				"opeStack"
+			],
+			[
+				"in",
+				"index_y"
+			],
+			[
+				"y",
+				"y_labels"
+			],
+			[
+				"obj",
+				"objects"
+			],
+			[
+				"maxw",
+				"max_width"
+			],
+			[
+				"defals",
+				"default_screen_height"
+			],
+			[
+				"defa",
+				"default_screen_width"
+			],
+			[
+				"page",
+				"pages"
+			],
+			[
+				"ope",
+				"opeOrder"
+			],
+			[
+				"ops",
+				"_opeStack"
+			],
+			[
+				"otp",
+				"output"
+			],
+			[
+				"animated",
+				"animate_div"
+			],
+			[
+				"fixo",
+				"fix_objects"
+			],
+			[
+				"edit",
+				"editor"
+			],
+			[
+				"animateobjs",
+				"animate_objects"
+			],
+			[
+				"animaobjs",
+				"animate_objects"
+			],
+			[
+				"dbt",
+				"dbTableTo2DList"
+			],
+			[
+				"anima",
+				"animate"
+			],
+			[
+				"dis",
+				"displayVar"
+			],
+			[
+				"menu",
+				"menu-members-menu-container"
+			],
+			[
+				"print",
+				"print_items"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"lot",
+				"lot_id"
+			],
+			[
+				"date",
+				"date_time"
+			],
+			[
+				"ema",
+				"email"
+			],
+			[
+				"email",
+				"email_input"
+			],
+			[
+				"val",
+				"value"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"raw",
+				"raw_code"
+			],
+			[
+				"true",
+				"true"
+			],
+			[
+				"mysql_num",
+				"mysql_num_rows"
+			],
+			[
+				"a",
+				"a"
+			],
+			[
+				"ta",
+				"TARGET"
+			],
+			[
+				"tr",
+				"TARGET"
+			],
+			[
+				"tar",
+				"TARGET-1"
+			],
+			[
+				"cur",
+				"currentAngleRad"
+			],
+			[
+				"rotate",
+				"rotate_objects"
+			],
+			[
+				"animate",
+				"animate_objects"
+			],
+			[
+				"arr",
+				"array"
+			],
+			[
+				"tabl",
+				"table"
+			],
+			[
+				"dbta",
+				"dbTableToArray"
+			],
+			[
+				"title",
+				"title_list"
+			],
+			[
+				"ti",
+				"time_out"
+			],
+			[
+				"le",
+				"legency_edit_mode"
+			],
+			[
+				"file",
+				"file_index"
+			],
+			[
+				"meta",
+				"meta_info"
+			],
+			[
+				"arrt",
+				"arrayToParametersWithQuote"
+			],
+			[
+				"array",
+				"arrayToParametersWithQuote"
+			],
+			[
+				"leng",
+				"length-1"
+			],
+			[
+				"titl",
+				"titles"
+			],
+			[
+				"table",
+				"table_name"
+			],
+			[
+				"sql",
+				"sql_mode"
+			],
+			[
+				"row",
+				"row_affected"
+			],
+			[
+				"len",
+				"length-1"
+			],
+			[
+				"titles",
+				"titles_div"
+			],
+			[
+				"mysql_fetch",
+				"mysql_fetch_row"
+			],
+			[
+				"start",
+				"startDiv"
+			],
+			[
+				"animate_objects_end_",
+				"animate_objects_end_y"
+			],
+			[
+				"animate_objects_end",
+				"animate_objects_end_x"
+			],
+			[
+				"ros",
+				"rotate_objects"
+			],
+			[
+				"roatee",
+				"rotate_objects_location_x"
+			],
+			[
+				"rota",
+				"rotate_objects"
+			],
+			[
+				"fix",
+				"fix_objects"
+			],
+			[
+				"clear",
+				"clear_frame"
+			],
+			[
+				"windo",
+				"window"
+			],
+			[
+				"vi",
+				"vertical-align"
+			],
+			[
+				"r",
+				"rgba()"
+			],
+			[
+				"backg",
+				"background-color"
+			],
+			[
+				"addj",
+				"addJavaScript2DArray"
+			],
+			[
+				"glob",
+				"global"
+			],
+			[
+				"glo",
+				"global"
+			],
+			[
+				"anim",
+				"animate_objects_start_x"
+			],
+			[
+				"js",
+				"js_name"
+			],
+			[
+				"phpr",
+				"php_2d_array"
+			],
+			[
+				"background",
+				"background-image"
+			],
+			[
+				"inpu",
+				"inputFilenameArray"
+			],
+			[
+				"statist",
+				"statistics_reg"
+			],
+			[
+				"jspl",
+				"jsploader"
+			],
+			[
+				"ratio",
+				"ratio_reg"
+			],
+			[
+				"files",
+				"files"
+			],
+			[
+				"upload",
+				"uploadedFileName"
+			],
+			[
+				"stat",
+				"statistics_reg"
+			],
+			[
+				"result",
+				"result_text"
+			],
+			[
+				"filesiz",
+				"file_size"
+			],
+			[
+				"resul",
+				"result_text"
+			],
+			[
+				"res",
+				"resouce_url"
+			],
+			[
+				"swit",
+				"switch_to_next"
+			],
+			[
+				"border-co",
+				"border-color"
+			],
+			[
+				"bord",
+				"border"
+			],
+			[
+				"handle",
+				"handleDragover"
+			],
+			[
+				"hand",
+				"handleDrop"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/User/Python Default.sublime-build",
+	"command_palette":
+	{
+		"height": 327.0,
+		"selected_items":
+		[
+			[
+				"xml",
+				"Set Syntax: XML"
+			],
+			[
+				":w",
+				":w - Save"
+			],
+			[
+				":latex",
+				"Set Syntax: LaTeX"
+			],
+			[
+				":late",
+				"Set Syntax: LaTeX"
+			],
+			[
+				":sq",
+				"Set Syntax: SQL"
+			]
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/pachydermx/Downloads/#S.3.3.C#/First Read me , PASSWORD HERE !!!.txt",
+		"/Users/pachydermx/Dropbox/Server/htdocs/demo/survey/demo.html",
+		"/Users/pachydermx/Dropbox/セキュリティポリシー設計/ps0401.log",
+		"/Public/Application/X/F/Private/Special/untitled folder 2/【肉畜与乳畜】.txt",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/successcreator.com Edits/paramain.js2/paramain.js",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/192.168.1.200 Edits/selector.loader.blade.php1/selector.loader.blade.php",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/192.168.1.200 Edits/2015_03_14_064625_create_regions_table.php1/2015_03_14_064625_create_regions_table.php",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/192.168.1.200 Edits/edit.blade.php7/edit.blade.php",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/192.168.1.200 Edits/test.blade.php/test.blade.php",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/192.168.1.200 Edits/RegionsController.php1/RegionsController.php",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/192.168.1.200 Edits/Region.php1/Region.php",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/192.168.1.200 Edits/District.php1/District.php",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/192.168.1.200 Edits/PagesController.php4/PagesController.php",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/192.168.1.200 Edits/CommentsController.php3/CommentsController.php",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/192.168.1.200 Edits/Comment.php1/Comment.php",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/192.168.1.200 Edits/CommentsController.php2/CommentsController.php",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/192.168.1.200 Edits/artisan/artisan",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/192.168.1.200 Edits/SpotsController.php/SpotsController.php",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/192.168.1.200 Edits/translate.txt1/translate.txt",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/192.168.1.200 Edits/DistrictsController.php/DistrictsController.php",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/192.168.1.200 Edits/edit.blade.php6/edit.blade.php",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/192.168.1.200 Edits/create.blade.php4/create.blade.php",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/192.168.1.200 Edits/RegionAdmin.blade.php1/RegionAdmin.blade.php",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/192.168.1.200 Edits/edit.blade.php5/edit.blade.php",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/192.168.1.200 Edits/create.blade.php3/create.blade.php",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/192.168.1.200 Edits/District.php/District.php",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/192.168.1.200 Edits/RegionsController.php/RegionsController.php",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/192.168.1.200 Edits/Spot.php/Spot.php",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/192.168.1.200 Edits/Region.php/Region.php",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/192.168.1.200 Edits/2015_03_14_085006_create_spots_table.php/2015_03_14_085006_create_spots_table.php",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/192.168.1.200 Edits/AdminHome.blade.php1/AdminHome.blade.php",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/192.168.1.200 Edits/create.blade.php2/create.blade.php",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/192.168.1.200 Edits/edit.blade.php4/edit.blade.php",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/192.168.1.200 Edits/2015_03_14_072027_create_districts_table.php/2015_03_14_072027_create_districts_table.php",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/192.168.1.200 Edits/Page.php1/Page.php",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/192.168.1.200 Edits/2015_03_12_053727_create_pages_table.php/2015_03_12_053727_create_pages_table.php",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/192.168.1.200 Edits/app.blade.php/app.blade.php",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/192.168.1.200 Edits/CommentsController.php1/CommentsController.php",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/192.168.1.200 Edits/edit.blade.php3/edit.blade.php",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/192.168.1.200 Edits/index.blade.php1/index.blade.php",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/192.168.1.200 Edits/Comment.php/Comment.php",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/192.168.1.200 Edits/2015_03_14_064625_create_regions_table.php/2015_03_14_064625_create_regions_table.php",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/192.168.1.200 Edits/show.blade.php1/show.blade.php",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/192.168.1.200 Edits/PagesController.php3/PagesController.php",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/192.168.1.200 Edits/CommentsController.php/CommentsController.php",
+		"/Users/pachydermx/Desktop/right.html",
+		"/Users/pachydermx/Desktop/left.html",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/192.168.1.200 Edits/2015_03_13_094731_create_comments_table.php/2015_03_13_094731_create_comments_table.php",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/192.168.1.200 Edits/PagesController.php1/PagesController.php",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/192.168.1.200 Edits/default.blade.php1/default.blade.php",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/192.168.1.200 Edits/home.blade.php/home.blade.php",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/192.168.1.200 Edits/HomeController.php/HomeController.php",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/192.168.1.200 Edits/create.blade.php1/create.blade.php",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/192.168.1.200 Edits/edit.blade.php1/edit.blade.php",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/192.168.1.200 Edits/AuthController.php/AuthController.php",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/192.168.1.200 Edits/PasswordController.php/PasswordController.php",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/192.168.1.200 Edits/AdminHomeController.php/AdminHomeController.php",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/192.168.1.200 Edits/routes.php1/routes.php",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/192.168.1.200 Edits/DatabaseSeeder.php/DatabaseSeeder.php",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/192.168.1.200 Edits/PageTableSeeder.php1/PageTableSeeder.php",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/192.168.1.200 Edits/2015_03_12_053716_create_articles_table.php/2015_03_12_053716_create_articles_table.php",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/192.168.1.200 Edits/2015_03_12_035717_create_pages_table.php/2015_03_12_035717_create_pages_table.php",
+		"/Volumes/C/jiuli/htdocs/.env",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/192.168.1.200 Edits/filesystems.php/filesystems.php",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/192.168.1.200 Edits/app.php/app.php",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/192.168.1.200 Edits/functions.php2/functions.php",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/192.168.1.200 Edits/woocommerce.php/woocommerce.php",
+		"/Users/pachydermx/Git/Katana/page-templates/main.php",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/192.168.1.200 Edits/main.php/main.php",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/192.168.1.200 Edits/header.php/header.php",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/192.168.1.200 Edits/single.php/single.php",
+		"/Users/pachydermx/Git/Katana/page.php",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/192.168.1.200 Edits/archive.php/archive.php",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/192.168.1.200 Edits/category.php/category.php",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/192.168.1.200 Edits/index.php/index.php",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/192.168.1.200 Edits/page_sample.js/page_sample.js",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/192.168.1.200 Edits/index.js1/index.js",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/192.168.1.200 Edits/style.css/style.css",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/192.168.1.200 Edits/page_sample.html/page_sample.html",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/192.168.1.200 Edits/page.php/page.php",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/192.168.1.200 Edits/sidebar.php/sidebar.php",
+		"/Users/pachydermx/Library/Application Support/Yummy FTP/Remote Edits/192.168.1.200 Edits/footer.php/footer.php",
+		"/Users/pachydermx/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/pachydermx/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/pachydermx/Git/Katana/page_sample.css",
+		"/Users/pachydermx/Git/Katana/style.css",
+		"/Users/pachydermx/Git/Katana/footer.php",
+		"/Users/pachydermx/Git/Katana/index.php",
+		"/Users/pachydermx/Git/Katana/tag.php",
+		"/Users/pachydermx/Git/Katana/page_sample.js",
+		"/Users/pachydermx/Git/Katana/terms_of_service.txt",
+		"/Users/pachydermx/Git/Katana/.git-ftp-curl-upload-tmp",
+		"/Users/pachydermx/Downloads/test_mail.php",
+		"/Users/pachydermx/Git/Katana/page_sample.html",
+		"/Users/pachydermx/Git/Katana/lib/functions/nav_menu.php",
+		"/Users/pachydermx/Git/Katana/lib/functions/content.php",
+		"/Users/pachydermx/Git/Katana/paralib/paramain.js",
+		"/Users/pachydermx/Git/Katana/paralib/function.php",
+		"/Users/pachydermx/Git/Katana/editor.php",
+		"/Users/pachydermx/Downloads/Taylor Swift-Blank Space.lrc",
+		"/Users/pachydermx/Downloads/9ku_com_653069.lrc",
+		"/Users/pachydermx/Git/Katana/editorlib/datareloader.php",
+		"/Users/pachydermx/Git/Katana/editorlib/datatypes.txt",
+		"/Users/pachydermx/Git/Katana/editorlib/dataloader.php",
+		"/Users/pachydermx/Dropbox/1情理/1後期/情報コミュニケーション学創成/Final/report.tex",
+		"/Users/pachydermx/Dropbox/1情理/1後期/情報コミュニケーション学創成/Pro/calc.py",
+		"/Users/pachydermx/Dropbox/1情理/1後期/情報コミュニケーション学創成/Pro/__init__.py",
+		"/Users/pachydermx/Dropbox/Mr (1).Nin/slider_plugin/slider.php",
+		"/Users/pachydermx/Dropbox/Mr (1).Nin/slider_plugin/slider.html",
+		"/Users/pachydermx/Dropbox/1情理/1後期/情報コミュニケーション学創成/Pro/main.py",
+		"/Users/pachydermx/Library/Application Support/Sublime Text 2/Packages/User/Python Default.sublime-build",
+		"/Users/pachydermx/Dropbox/Server/htdocs/demo/katana/editorlib/editor.js",
+		"/Users/pachydermx/Dropbox/Server/htdocs/demo/katana/editorlib/editor.css",
+		"/Users/pachydermx/Dropbox/Server/htdocs/demo/katana/paralib/function.php",
+		"/Volumes/HDD/Downloads/slider-1.xml",
+		"/Volumes/HDD/Documents/Works/MIX/class.php",
+		"/Volumes/HDD/Downloads/Traffic_Racer_Hack_2014/Read_me!.txt",
+		"/private/var/folders/j1/mrkq12jj2wv2191dx4vv82yw0000gn/T/temp.cBR5ZA/prefetch-index.html",
+		"/Users/pachydermx/Desktop/com.skgames.racer.plist",
+		"/Volumes/HDD/OneDrive/devApple/SyncBoard/SyncBoard/ja.lproj/Localizable.strings",
+		"/Users/pachydermx/Dropbox/server/htdocs/py/test.py",
+		"/Users/pachydermx/Dropbox/Server/htdocs/syncboard/index.php",
+		"/Users/pachydermx/Dropbox/Server/htdocs/syncboard/kuji.php",
+		"/Users/pachydermx/Dropbox/Server/htdocs/syncboard/kuji.css",
+		"/Users/pachydermx/Dropbox/Server/htdocs/syncboard/lot_select.php",
+		"/Users/pachydermx/Dropbox/Server/htdocs/syncboard/mail_check.php",
+		"/Users/pachydermx/Dropbox/1情理/1後期/情報コミュニケーション学創成/Week05/picalc.c",
+		"/Volumes/HDD/Downloads/GTA Sa/Readme By Squall89.txt"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"region_name",
+			"district",
+			"content",
+			"region",
+			";",
+			"\n",
+			"solid",
+			"console",
+			"display:",
+			"entry",
+			"button",
+			"sydneylodge",
+			"header_lo",
+			"css_enhance",
+			"css",
+			"footer_inner",
+			"i",
+			"animate_obj",
+			"z-index",
+			"opacity",
+			"0",
+			"opacity",
+			"addLibBackground",
+			"r",
+			"equation",
+			"x",
+			"ele",
+			"printStacks",
+			"range",
+			"\n					",
+			"char",
+			"Char",
+			"char",
+			"currentPro",
+			"opeOrder",
+			"self",
+			"menu-main-menu-container",
+			"menu-main-menu",
+			"bigger",
+			"result",
+			"temp",
+			"result",
+			"counter",
+			"Upload",
+			"edit_mode",
+			"0",
+			"0-9",
+			"createEditor",
+			"label",
+			"startInsert",
+			"the_array",
+			"page_num",
+			"0",
+			"e_x",
+			"animate_div",
+			"background_list",
+			"i",
+			"paralib",
+			"numerate",
+			"|",
+			">(",
+			"<http",
+			">(",
+			"<http",
+			"vconsole",
+			"console",
+			"loaded",
+			"\"Upload",
+			"css",
+			"border",
+			"500",
+			"load",
+			"/exp",
+			"paraP",
+			"console",
+			"javascript console log",
+			"loader",
+			"tempOutFileName",
+			"CompressedData",
+			"evt",
+			"StringBuilder",
+			"support",
+			"get_content",
+			"main-navi",
+			".site {",
+			".site",
+			"media",
+			"input[type=\"button\"]",
+			"media",
+			"navi",
+			"nav_below",
+			"set_div",
+			"section_3_content_2",
+			"debugger",
+			"ani_out",
+			"secondary",
+			"get_content",
+			"scrolltop",
+			"interval",
+			"scroll",
+			"scrollTop",
+			"debugger",
+			"debugg",
+			"debugger",
+			"debug",
+			"border-bottom",
+			"80px",
+			"\n.",
+			"margin-right",
+			"current",
+			"read_more",
+			".gif",
+			"w",
+			"\"",
+			"continue",
+			"Edit",
+			"^$",
+			"^　",
+			"^　$",
+			"^ $",
+			"^$",
+			"\n ",
+			" \n ",
+			"\n \n ",
+			"  ",
+			"<.*>",
+			"<td >",
+			" <td >"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"name",
+			"counter",
+			"&",
+			"</a>(",
+			"<a href=\"\">http",
+			" - ",
+			" - http",
+			"get_para_content",
+			"section_3_content_1_a",
+			".png",
+			"",
+			"\n",
+			"\n\n ",
+			"\n ",
+			"",
+			"\n ",
+			"",
+			" ",
+			"",
+			" ",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}
