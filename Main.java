@@ -29,18 +29,42 @@ public class Main extends JFrame{
     private CameraDisplay cd = null;
     private ControlPanel cp = null;
     private ImageList il = null;
+    private VideoIndicator vi = null;
 
     public Main(){
         // init objects
         cd = new CameraDisplay();
         cp = new ControlPanel();
         il = new ImageList();
+        vi = new VideoIndicator();
 
         // set window
         this.setTitle("CamViewer");
         this.setSize(1024, 768);
+        this.setResizable(false);
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        // add components
+        cd.setBounds(0, 0, 640, 480);
+        cp.setBounds(0, 480, 640, 288);
+        il.setBounds(640, 0, 384, 768);
+        vi.setBounds(0, 0, 640, 480);
+
+        // set up components
+        cd.vi = vi;
+
+        this.add(cd);
+        this.add(cp);
+        this.add(il);
+
+        this.setGlassPane(vi);
+        vi.setVisible(true);
         // display window
         this.setVisible(true);
+
+        // for test
+        il.addImage();
+
     }
 
     public static void main(String[] args) {

@@ -25,5 +25,9 @@ import java.awt.*;
 import java.awt.event.*;
 
 public class ControlPanel extends JPanel{
+	public ControlPanel(){
+		this.setBackground(Color.RED);
+		this.setPreferredSize(new Dimension(640, 480));
+	}
 	
 }
