@@ -38,24 +38,24 @@ public class Main extends JFrame{
         il = new ImageList();
         vi = new VideoIndicator();
 
+        JPanel lc = new JPanel();
+        lc.setPreferredSize(new Dimension(640, 768));
+        lc.setLayout(new BorderLayout());
+
         // set window
         this.setTitle("CamViewer");
         this.setSize(1024, 768);
         this.setResizable(false);
+        this.setLayout(new BorderLayout());
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
-        // add components
-        cd.setBounds(0, 0, 640, 480);
-        cp.setBounds(0, 480, 640, 288);
-        il.setBounds(640, 0, 384, 768);
-        vi.setBounds(0, 0, 640, 480);
 
         // set up components
         cd.vi = vi;
 
-        this.add(cd);
-        this.add(cp);
-        this.add(il);
+        lc.add(cd, BorderLayout.NORTH);
+        lc.add(cp, BorderLayout.SOUTH);
+        this.add(lc, BorderLayout.WEST);
+        this.add(il, BorderLayout.EAST);
 
         this.setGlassPane(vi);
         vi.setVisible(true);

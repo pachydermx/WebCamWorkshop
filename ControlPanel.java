@@ -29,5 +29,4 @@ public class ControlPanel extends JPanel{
 		this.setBackground(Color.RED);
 		this.setPreferredSize(new Dimension(640, 480));
 	}
-	
 }
