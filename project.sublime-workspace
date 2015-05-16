@@ -4,6 +4,38 @@
 		"selected_items":
 		[
 			[
+				"avg",
+				"avgOutput"
+			],
+			[
+				"Vide",
+				"VideoMountedDisplay"
+			],
+			[
+				"mati",
+				"matrix"
+			],
+			[
+				"matr",
+				"matrixLength"
+			],
+			[
+				"jla",
+				"JLayeredPane"
+			],
+			[
+				"sw",
+				"swing"
+			],
+			[
+				"proc",
+				"process"
+			],
+			[
+				"Buffim",
+				"BufferedImage"
+			],
+			[
 				"mar",
 				"margin"
 			],
@@ -482,49 +514,34 @@
 			[
 				"result",
 				"result_text"
-			],
-			[
-				"filesiz",
-				"file_size"
-			],
-			[
-				"resul",
-				"result_text"
-			],
-			[
-				"res",
-				"resouce_url"
-			],
-			[
-				"swit",
-				"switch_to_next"
-			],
-			[
-				"border-co",
-				"border-color"
-			],
-			[
-				"bord",
-				"border"
-			],
-			[
-				"handle",
-				"handleDragover"
-			],
-			[
-				"hand",
-				"handleDrop"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "/Users/pachydermx/Downloads/webcam-capture-0/examples/WebcamViewerExample.java",
+			"file": "CamTest.java",
 			"settings":
 			{
-				"buffer_size": 4266,
-				"line_ending": "Windows"
+				"buffer_size": 6963,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "VideoMountedDisplay.java",
+			"settings":
+			{
+				"buffer_size": 1322,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "test.bat",
+			"settings":
+			{
+				"buffer_size": 69,
+				"line_ending": "Unix",
+				"name": "javac CamTest.java"
 			}
 		}
 	],
@@ -572,6 +589,12 @@
 	},
 	"file_history":
 	[
+		"/Users/pachydermx/Git/WebCamWorkshop/demos/drawoverjmf/GlassPanel.java",
+		"/Users/pachydermx/Git/WebCamWorkshop/demos/drawoverjmf/CameraFrame.java",
+		"/Users/pachydermx/Git/WebCamWorkshop/demos/drawoverjmf/CameraFrame",
+		"/Users/pachydermx/Dropbox/1情理/Archive/2回/1後期/Java3/Draws.java",
+		"/Users/pachydermx/Git/WebCamWorkshop/CamTest.java",
+		"/Users/pachydermx/Downloads/webcam-capture-0/examples/WebcamViewerExample.java",
 		"/Users/pachydermx/Downloads/#S.3.3.C#/First Read me , PASSWORD HERE !!!.txt",
 		"/Users/pachydermx/Dropbox/Server/htdocs/demo/survey/demo.html",
 		"/Users/pachydermx/Dropbox/セキュリティポリシー設計/ps0401.log",
@@ -693,13 +716,7 @@
 		"/Users/pachydermx/Desktop/com.skgames.racer.plist",
 		"/Volumes/HDD/OneDrive/devApple/SyncBoard/SyncBoard/ja.lproj/Localizable.strings",
 		"/Users/pachydermx/Dropbox/server/htdocs/py/test.py",
-		"/Users/pachydermx/Dropbox/Server/htdocs/syncboard/index.php",
-		"/Users/pachydermx/Dropbox/Server/htdocs/syncboard/kuji.php",
-		"/Users/pachydermx/Dropbox/Server/htdocs/syncboard/kuji.css",
-		"/Users/pachydermx/Dropbox/Server/htdocs/syncboard/lot_select.php",
-		"/Users/pachydermx/Dropbox/Server/htdocs/syncboard/mail_check.php",
-		"/Users/pachydermx/Dropbox/1情理/1後期/情報コミュニケーション学創成/Week05/picalc.c",
-		"/Volumes/HDD/Downloads/GTA Sa/Readme By Squall89.txt"
+		"/Users/pachydermx/Dropbox/Server/htdocs/syncboard/index.php"
 	],
 	"find":
 	{
@@ -717,6 +734,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"cnt",
+			"vedioPanel",
+			"str2",
 			"region_name",
 			"district",
 			"content",
@@ -841,10 +861,7 @@
 			"\n ",
 			" \n ",
 			"\n \n ",
-			"  ",
-			"<.*>",
-			"<td >",
-			" <td >"
+			"  "
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -883,29 +900,83 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/Users/pachydermx/Downloads/webcam-capture-0/examples/WebcamViewerExample.java",
+					"file": "CamTest.java",
 					"settings":
 					{
-						"buffer_size": 4266,
+						"buffer_size": 6963,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								3122,
+								3122
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Java/Java.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 293.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "VideoMountedDisplay.java",
+					"settings":
+					{
+						"buffer_size": 1322,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1021,
+								932
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "test.bat",
+					"settings":
+					{
+						"buffer_size": 69,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3,
+								3
+							]
+						],
+						"settings":
+						{
+							"auto_name": "javac CamTest.java",
+							"syntax": "Packages/Batch File/Batch File.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,

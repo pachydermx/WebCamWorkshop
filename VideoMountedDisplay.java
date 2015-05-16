@@ -25,12 +25,19 @@ public class VideoMountedDisplay extends JPanel{
         g.setFont(new Font("Verdana", Font.BOLD, 16));
 
         // draw matrix label
-        int x, y;
+        int x, y, value;
         int origin_x = 10;
         int origin_y = 30;
         for (y = 0; y < matrixHeight; y++){
         	for (x = 0; x < matrixWidth; x++){
-        		g.drawString(""+matrix[y * matrixWidth + x], origin_x, origin_y);
+        		value = matrix[y * matrixWidth + x];
+        		// text display
+        		//g.drawString(""+value, origin_x, origin_y);
+        		// graphical display
+        		if (value > 0){
+        			g.fillRect(origin_x, origin_y, 40, 40);
+        		}
+
         		origin_x += margin_x;
         	}
         	origin_x = 10;
