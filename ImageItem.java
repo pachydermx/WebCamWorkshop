@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 import java.awt.*;
-import java.awt.BorderLayout;
+import java.awt.FlowLayout;
 import java.awt.Component;
 import java.awt.image.*;
 import javax.imageio.*;
@@ -17,13 +17,19 @@ import java.awt.event.*;
 public class ImageItem extends JPanel{
 
 	private JLabel label;
+	private ImageIcon icon;
 
-	public ImageItem(){
-		this.setBackground(Color.YELLOW);
+	public ImageItem(String text){
+		this.setBackground(Color.WHITE);
 		this.setPreferredSize(new Dimension(364, 120));
-		this.setLayout(new BorderLayout());
+		this.setLayout(new FlowLayout());
 
-		label = new JLabel("Hello World");
-		this.add(label, BorderLayout.WEST);
+		// image
+		icon = new ImageIcon("test.png");
+		this.add(new JLabel(icon));
+
+		// label
+		label = new JLabel("Time: " + text);
+		this.add(label);
 	}
 }

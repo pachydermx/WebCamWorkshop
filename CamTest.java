@@ -124,6 +124,7 @@ public class CamTest extends JFrame{
                 int imgWidth = img.getWidth(null);
                 int imgHeight = img.getHeight(null);
                 BufferedImage buffImg = new BufferedImage(imgWidth, imgHeight, BufferedImage.TYPE_INT_RGB);
+                
                 Graphics2D g = buffImg.createGraphics();
 
                 int[] pixelInput = new int[imgWidth * imgHeight];

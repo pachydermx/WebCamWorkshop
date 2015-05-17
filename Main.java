@@ -63,8 +63,7 @@ public class Main extends JFrame{
         this.setVisible(true);
 
         // for test
-        il.addImage();
-
+        il.addImage("First try");
     }
 
     public static void main(String[] args) {
