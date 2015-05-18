@@ -36,7 +36,6 @@ public class CameraDisplay extends JPanel{
     public VideoIndicator vi = null;
 
     private int interval = 100;
-    private int threshold = 10;
 
     public ImageProcessor ip = null;
 
@@ -94,13 +93,17 @@ public class CameraDisplay extends JPanel{
         public void run(){
 
             try{
+                Thread.sleep(5000);
                 while (true){
                     // wait for next circle
                     Thread.sleep(interval);
                     imageMatrix = ip.process(this.grabImage());
+                    if (vi != null){
+                        vi.setMatrix(imageMatrix);
+                    }
                 }
             } catch (Exception e) {
-                System.out.println(e);
+                e.printStackTrace();
             }
         }
 

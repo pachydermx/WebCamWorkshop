@@ -37,8 +37,6 @@ public class ImageList extends JPanel implements ActionListener{
 		items.add(new ImageItem(label));
 		this.add(items.get(items.size() - 1));
 
-		System.out.println("adding item #"+items.size());
-
 		// refresh to display new item
 		this.revalidate();
 	}

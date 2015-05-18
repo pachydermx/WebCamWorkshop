@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"Imag",
+				"ImageIcon"
+			],
+			[
 				"cod",
 				"cornerDisplayLocations_y"
 			],
@@ -510,28 +514,16 @@
 			[
 				"files",
 				"files"
-			],
-			[
-				"upload",
-				"uploadedFileName"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "VideoMountedDisplay.java",
+			"file": "CamTest.java",
 			"settings":
 			{
-				"buffer_size": 1322,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Main.java",
-			"settings":
-			{
-				"buffer_size": 1808,
+				"buffer_size": 6980,
 				"line_ending": "Unix"
 			}
 		},
@@ -539,7 +531,15 @@
 			"file": "CameraDisplay.java",
 			"settings":
 			{
-				"buffer_size": 2044,
+				"buffer_size": 3144,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "ImageProcessor.java",
+			"settings":
+			{
+				"buffer_size": 3609,
 				"line_ending": "Unix"
 			}
 		},
@@ -547,7 +547,15 @@
 			"file": "VideoIndicator.java",
 			"settings":
 			{
-				"buffer_size": 1665,
+				"buffer_size": 1313,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Main.java",
+			"settings":
+			{
+				"buffer_size": 1818,
 				"line_ending": "Unix"
 			}
 		},
@@ -556,22 +564,6 @@
 			"settings":
 			{
 				"buffer_size": 777,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "ImageList.java",
-			"settings":
-			{
-				"buffer_size": 823,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "ImageItem.java",
-			"settings":
-			{
-				"buffer_size": 602,
 				"line_ending": "Unix"
 			}
 		}
@@ -621,7 +613,9 @@
 	"file_history":
 	[
 		"/Users/pachydermx/Git/WebCamWorkshop/test.bat",
+		"/Users/pachydermx/Git/WebCamWorkshop/ImageItem.java",
 		"/Users/pachydermx/Git/WebCamWorkshop/ImageList.java",
+		"/Users/pachydermx/Git/WebCamWorkshop/VideoMountedDisplay.java",
 		"/Users/pachydermx/Git/WebCamWorkshop/ControlPanel.java",
 		"/Users/pachydermx/Git/WebCamWorkshop/CameraDisplay",
 		"/Users/pachydermx/Git/WebCamWorkshop/Main.java",
@@ -745,9 +739,7 @@
 		"/Users/pachydermx/Library/Application Support/Sublime Text 2/Packages/User/Python Default.sublime-build",
 		"/Users/pachydermx/Dropbox/Server/htdocs/demo/katana/editorlib/editor.js",
 		"/Users/pachydermx/Dropbox/Server/htdocs/demo/katana/editorlib/editor.css",
-		"/Users/pachydermx/Dropbox/Server/htdocs/demo/katana/paralib/function.php",
-		"/Volumes/HDD/Downloads/slider-1.xml",
-		"/Volumes/HDD/Documents/Works/MIX/class.php"
+		"/Users/pachydermx/Dropbox/Server/htdocs/demo/katana/paralib/function.php"
 	],
 	"find":
 	{
@@ -765,6 +757,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"createImage",
+			"deltaOutput",
+			"addListener",
 			"this",
 			"glassPane",
 			"VideoMountedDisplay",
@@ -889,10 +884,7 @@
 			"Edit",
 			"^$",
 			"^　",
-			"^　$",
-			"^ $",
-			"^$",
-			"\n "
+			"^　$"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -931,49 +923,23 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "VideoMountedDisplay.java",
+					"file": "CamTest.java",
 					"settings":
 					{
-						"buffer_size": 1322,
+						"buffer_size": 6980,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1021,
-								932
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Java/Java.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "Main.java",
-					"settings":
-					{
-						"buffer_size": 1808,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1066,
-								1066
+								1441,
+								1441
 							]
 						],
 						"settings":
@@ -983,25 +949,53 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 346.0,
+						"translation.y": 1312.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 1,
 					"file": "CameraDisplay.java",
 					"settings":
 					{
-						"buffer_size": 2044,
+						"buffer_size": 3144,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1818,
-								1818
+								2696,
+								2696
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 932.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "ImageProcessor.java",
+					"settings":
+					{
+						"buffer_size": 3609,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1314,
+								1314
 							]
 						],
 						"settings":
@@ -1009,7 +1003,7 @@
 							"syntax": "Packages/Java/Java.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 376.0,
+						"translation.y": 586.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1019,15 +1013,15 @@
 					"file": "VideoIndicator.java",
 					"settings":
 					{
-						"buffer_size": 1665,
+						"buffer_size": 1313,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1391,
-								1391
+								1252,
+								1252
 							]
 						],
 						"settings":
@@ -1035,13 +1029,41 @@
 							"syntax": "Packages/Java/Java.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 436.0,
+						"translation.y": 132.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 4,
+					"file": "Main.java",
+					"settings":
+					{
+						"buffer_size": 1818,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1723,
+								1723
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 46.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
 					"file": "ControlPanel.java",
 					"settings":
 					{
@@ -1052,60 +1074,8 @@
 						"selection":
 						[
 							[
-								776,
-								776
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Java/Java.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "ImageList.java",
-					"settings":
-					{
-						"buffer_size": 823,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								815,
-								815
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Java/Java.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "ImageItem.java",
-					"settings":
-					{
-						"buffer_size": 602,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								520,
-								520
+								665,
+								665
 							]
 						],
 						"settings":
