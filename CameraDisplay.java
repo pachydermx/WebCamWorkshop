@@ -81,14 +81,15 @@ public class CameraDisplay extends JPanel{
         }
 	}
 
-    private class ProcessCircle extends Thread{
+    public static Image grabImage(){
+        FrameGrabbingControl frameGrabber = (FrameGrabbingControl)player.getControl("javax.media.control.FrameGrabbingControl");
+        Buffer buf = frameGrabber.grabFrame();
+        Image img = (new BufferToImage((VideoFormat) buf.getFormat()).createImage(buf));
+        return img;
+    }
 
-        public Image grabImage(){
-            FrameGrabbingControl frameGrabber = (FrameGrabbingControl)player.getControl("javax.media.control.FrameGrabbingControl");
-            Buffer buf = frameGrabber.grabFrame();
-            Image img = (new BufferToImage((VideoFormat) buf.getFormat()).createImage(buf));
-            return img;
-        }
+
+    private class ProcessCircle extends Thread{
 
         public void run(){
 
@@ -97,7 +98,7 @@ public class CameraDisplay extends JPanel{
                 while (true){
                     // wait for next circle
                     Thread.sleep(interval);
-                    imageMatrix = ip.process(this.grabImage());
+                    imageMatrix = ip.process(grabImage());
                     if (vi != null){
                         vi.setMatrix(imageMatrix);
                     }

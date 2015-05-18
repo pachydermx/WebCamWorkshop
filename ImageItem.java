@@ -19,13 +19,17 @@ public class ImageItem extends JPanel{
 	private JLabel label;
 	private ImageIcon icon;
 
-	public ImageItem(String text){
+	public ImageItem(String text, Image img){
 		this.setBackground(Color.WHITE);
 		this.setPreferredSize(new Dimension(364, 120));
 		this.setLayout(new FlowLayout());
 
 		// image
-		icon = new ImageIcon("test.png");
+		if (img == null){
+			icon = new ImageIcon("test.png");
+		} else {
+			icon = new ImageIcon(img);
+		}
 		this.add(new JLabel(icon));
 
 		// label

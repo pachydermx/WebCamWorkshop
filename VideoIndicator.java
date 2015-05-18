@@ -7,7 +7,6 @@ import java.awt.event.*;
 
 public class VideoIndicator extends JPanel{
 
-	/*
 	int matrixWidth, matrixHeight;
 	int margin_x, margin_y;
 	int[] matrix;
@@ -53,25 +52,6 @@ public class VideoIndicator extends JPanel{
 		}
 	}
 
-	public void setMatrix(int[] mInput){
-		for (int i = 0; i < matrixWidth * matrixHeight; i++){
-			matrix[i] = mInput[i];
-		}
-	}
-
-
-
-	*/
-
-	@Override
-	protected void paintComponent(Graphics g){
-		super.paintComponent(g);
-        g.setColor(Color.RED);
-        g.setFont(new Font("Verdana", Font.BOLD, 16));
-
-        g.fillRect(100, 100, 320, 240);
-
-	}
 	@Override
 	public boolean isOpaque() {
 		return false;

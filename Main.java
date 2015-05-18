@@ -51,6 +51,7 @@ public class Main extends JFrame{
 
         // set up components
         cd.vi = vi;
+        il.cd = cd;
 
         lc.add(cd, BorderLayout.NORTH);
         lc.add(cp, BorderLayout.SOUTH);
@@ -58,12 +59,10 @@ public class Main extends JFrame{
         this.add(il, BorderLayout.EAST);
 
         this.setGlassPane(vi);
-        vi.setVisible(true);
+        //vi.setVisible(true);
         // display window
         this.setVisible(true);
 
-        // for test
-        il.addImage("First try");
     }
 
     public static void main(String[] args) {
