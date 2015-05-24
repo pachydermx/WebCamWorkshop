@@ -32,6 +32,10 @@ public class CameraDisplay extends JPanel{
 	private Component component = null;
     private JPanel videoPanel = null;
 
+    private int width;
+    private int height;
+    private int block;
+
     // vi will be assigned by Main after launched
     public static VideoIndicator vi = null;
     public static ImageList il = null;
@@ -52,8 +56,14 @@ public class CameraDisplay extends JPanel{
     String deviceName = "vfw:Microsoft WDM Image Capture (Win32):0";
     // Creates a new instance of CameraTest 
 
-	public CameraDisplay(){
-		this.setPreferredSize( new Dimension(640, 480));
+	public CameraDisplay(int width, int height, int block){
+        // basic conf
+        this.width = width;
+        this.height = height;
+        this.block = block;
+
+
+		this.setPreferredSize(new Dimension(width, height));
 
         Manager.setHint(Manager.LIGHTWEIGHT_RENDERER, new Boolean(true));
 
@@ -65,7 +75,7 @@ public class CameraDisplay extends JPanel{
         Format[] formats = deviceInfo.getFormats();
         Format selectedFormat = null;
         for(Format f : formats) {
-            if(f.toString().contains("width=640,height=480")) {
+            if(f.toString().contains("width="+width+",height="+height)) {
                 selectedFormat = f;
                 break;
             }
@@ -73,8 +83,8 @@ public class CameraDisplay extends JPanel{
 
 
         // create image processor
-        ip = new ImageProcessor();
-        bc = new BorderChecker(16, 12);
+        ip = new ImageProcessor(width, height, block);
+        bc = new BorderChecker(width / block, height / block);
 
         // configure
         bc.cd = this;
@@ -89,7 +99,7 @@ public class CameraDisplay extends JPanel{
 			component = player.getVisualComponent();
 			if (component != null){
                 layeredPane = new JLayeredPane();
-                layeredPane.setPreferredSize(new Dimension(640, 480));
+                layeredPane.setPreferredSize(new Dimension(width, height));
                 videoPanel = new JPanel();
                 videoPanel.add(component, BorderLayout.NORTH);
                 this.add(videoPanel);

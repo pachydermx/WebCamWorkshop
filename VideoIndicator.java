@@ -13,15 +13,22 @@ public class VideoIndicator extends JPanel{
 
 	int matrixWidth, matrixHeight;
 	int margin_x, margin_y;
+	int width, height;
 	int[][] matrix;
 	java.util.List<Point> clusters;
 	int[] counts;
 
-	public VideoIndicator(){
-		matrixWidth = 16;
-		matrixHeight = 12;
-		margin_x = 40;
-		margin_y = 40;
+	int ori_x;
+
+	public VideoIndicator(int width, int height, int block){
+		this.width = width;
+		this.height = height;
+
+		ori_x = (640 - this.width) / 2;
+		matrixWidth = width / block;
+		matrixHeight = height / block;
+		margin_x = block;
+		margin_y = block;
 		matrix = new int[matrixWidth][matrixHeight];
 		clusters = new ArrayList<Point>();
 		counts = new int[8];
@@ -43,7 +50,7 @@ public class VideoIndicator extends JPanel{
 
         // draw matrix 
         int x, y, value;
-        int origin_x = 0;
+        int origin_x = ori_x;
         int origin_y = 0;
 
         for (y = 0; y < matrixHeight; y++){
@@ -58,26 +65,26 @@ public class VideoIndicator extends JPanel{
 
         		origin_x += margin_x;
         	}
-        	origin_x = 10;
+        	origin_x = ori_x;
         	origin_y += margin_y;
         }
 
         // draw clusters
         g.setColor(Color.GREEN);
         for (Point i : clusters){
-        	g.fillRect((int)i.getX() * margin_x, (int)i.getY() * margin_y, margin_x, margin_y);
+        	g.fillRect((int)i.getX() * margin_x + ori_x, (int)i.getY() * margin_y, margin_x, margin_y);
         }
 
         // draw counts
         g.setColor(Color.BLUE);
-        g.drawString(Integer.toString(counts[0]), 0, 20);
-        g.drawString(Integer.toString(counts[1]), 290, 20);
-        g.drawString(Integer.toString(counts[2]), 580, 20);
-        g.drawString(Integer.toString(counts[3]), 580, 230);
-        g.drawString(Integer.toString(counts[4]), 580, 460);
-        g.drawString(Integer.toString(counts[5]), 290, 460);
-        g.drawString(Integer.toString(counts[6]), 0, 460);
-        g.drawString(Integer.toString(counts[7]), 0, 230);
+        g.drawString(Integer.toString(counts[0]), ori_x, 20);
+        g.drawString(Integer.toString(counts[1]), ori_x + width/2-20, 20);
+        g.drawString(Integer.toString(counts[2]), ori_x + width-40, 20);
+        g.drawString(Integer.toString(counts[3]), ori_x + width-40, height/2-10);
+        g.drawString(Integer.toString(counts[4]), ori_x + width-40, height-20);
+        g.drawString(Integer.toString(counts[5]), ori_x + width/2-20, height-20);
+        g.drawString(Integer.toString(counts[6]), ori_x, height-20);
+        g.drawString(Integer.toString(counts[7]), ori_x, height/2-10);
 
 
 	}
@@ -88,6 +95,7 @@ public class VideoIndicator extends JPanel{
 				matrix[x][y] = mInput[x][y];
 			}
 		}
+		repaint();
 	}
 
 	public void addCount(int direction){

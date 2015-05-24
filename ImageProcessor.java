@@ -40,11 +40,15 @@ public class ImageProcessor extends JPanel{
 	private int x, y, value, bx, by, avg, delta;
 	private Image imgOutput;
 
-	private int filterRadious = 40;
+	private int filterRadious;
     private int threshold = 10;
 
     private int[] avgOutput;
     private int[] deltaOutput;
+
+    public ImageProcessor(int width, int height, int block){
+    	filterRadious = block;
+    }
 
 	public int[][] process(Image img){
 		if (firstRun == 1){

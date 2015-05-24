@@ -31,12 +31,16 @@ public class Main extends JFrame{
     private ImageList il = null;
     private VideoIndicator vi = null;
 
+    private int width = 320;
+    private int height = 240;
+    private int block = 20;
+
     public Main(){
         // init objects
-        cd = new CameraDisplay();
+        cd = new CameraDisplay(width, height, block);
         cp = new ControlPanel();
-        il = new ImageList();
-        vi = new VideoIndicator();
+        il = new ImageList(width, height, block);
+        vi = new VideoIndicator(width, height, block);
 
         JPanel lc = new JPanel();
         lc.setPreferredSize(new Dimension(640, 768));

@@ -31,11 +31,14 @@ public class ImageList extends JPanel implements ActionListener{
 	private java.util.List<ImageItem> items = new ArrayList<ImageItem>();
 	private JButton reset;
 	public CameraDisplay cd;
-	private int width = 640;
-	private int height = 480;
+	private int width;
+	private int height;
 	public VideoIndicator vi;
 
-	public ImageList(){
+	public ImageList(int width, int height, int block){
+		this.width = width;
+		this.height = height;
+
 		// set layout
 		this.setLayout(new FlowLayout());
 		this.setPreferredSize(new Dimension(384, 768));
