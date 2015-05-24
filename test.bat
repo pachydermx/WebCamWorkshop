@@ -6,6 +6,7 @@ del ImageList.class
 del CameraDisplay.class
 del ImageProcessor.class
 del VideoIndicator.class
+del BorderChecker.class
 echo on
 javac CameraControlCommunicator.java -encoding UTF-8
 javac Main.java -encoding UTF-8

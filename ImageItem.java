@@ -16,10 +16,11 @@ import java.awt.event.*;
 
 public class ImageItem extends JPanel{
 
-	private JLabel label;
+	private JLabel timeLabel, directionLabel;
+	private JPanel labelPanel;
 	private ImageIcon icon;
 
-	public ImageItem(String text, Image img){
+	public ImageItem(String direction, String timestamp, Image img){
 		this.setBackground(Color.WHITE);
 		this.setPreferredSize(new Dimension(364, 120));
 		this.setLayout(new FlowLayout());
@@ -33,7 +34,13 @@ public class ImageItem extends JPanel{
 		this.add(new JLabel(icon));
 
 		// label
-		label = new JLabel("Time: " + text);
-		this.add(label);
+		labelPanel = new JPanel();
+		this.add(labelPanel);
+		labelPanel.setLayout(new BoxLayout(labelPanel, BoxLayout.Y_AXIS));
+
+		directionLabel = new JLabel("Direction: " + direction);
+		timeLabel = new JLabel("Time: " + timestamp);
+		labelPanel.add(directionLabel);
+		labelPanel.add(timeLabel);
 	}
 }

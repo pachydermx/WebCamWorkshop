@@ -51,6 +51,7 @@ public class Main extends JFrame{
 
         // set up components
         cd.vi = vi;
+        cd.il = il;
         il.cd = cd;
 
         lc.add(cd, BorderLayout.NORTH);
