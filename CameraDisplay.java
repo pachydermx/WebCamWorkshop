@@ -35,7 +35,7 @@ public class CameraDisplay extends JPanel{
     // vi will be assigned by Main after launched
     public VideoIndicator vi = null;
 
-    private int interval = 1000;
+    private int interval = 100;
 
     public ImageProcessor ip = null;
     public MedianClustering ci = null;
@@ -121,6 +121,9 @@ public class CameraDisplay extends JPanel{
 
                         vi.setClusterMark(cluster_x, cluster_y);
                     }
+
+                    // check border
+
 
 
                     if (vi != null){

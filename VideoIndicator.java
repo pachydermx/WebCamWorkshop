@@ -14,6 +14,7 @@ public class VideoIndicator extends JPanel{
 	int margin_x, margin_y;
 	int[][] matrix;
 	java.util.List<Point> clusters;
+	int[] counts;
 
 	public VideoIndicator(){
 		matrixWidth = 16;
@@ -22,6 +23,7 @@ public class VideoIndicator extends JPanel{
 		margin_y = 40;
 		matrix = new int[matrixWidth][matrixHeight];
 		clusters = new ArrayList<Point>();
+		counts = new int[8];
 	}
 
 	@Override
@@ -57,6 +59,18 @@ public class VideoIndicator extends JPanel{
         	g.fillRect((int)i.getX() * margin_x, (int)i.getY() * margin_y, margin_x, margin_y);
         }
 
+        // draw counts
+        g.setColor(Color.BLUE);
+        g.drawString(Integer.toString(counts[0]), 0, 0);
+        g.drawString(Integer.toString(counts[1]), 270, 0);
+        g.drawString(Integer.toString(counts[2]), 540, 0);
+        g.drawString(Integer.toString(counts[3]), 540, 230);
+        g.drawString(Integer.toString(counts[4]), 540, 460);
+        g.drawString(Integer.toString(counts[5]), 270, 460);
+        g.drawString(Integer.toString(counts[6]), 0, 460);
+        g.drawString(Integer.toString(counts[7]), 0, 230);
+
+
 	}
 
 	public void setMatrix(int[][] mInput){
@@ -65,6 +79,10 @@ public class VideoIndicator extends JPanel{
 				matrix[x][y] = mInput[x][y];
 			}
 		}
+	}
+
+	public void addCount(int direction){
+		counts[direction]++;
 	}
 
 	public void reset(){
