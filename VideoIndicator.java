@@ -7,6 +7,7 @@ import java.awt.event.*;
 import java.util.List;
 import java.util.ArrayList;
 import java.awt.Point;
+import java.util.Arrays;
 
 public class VideoIndicator extends JPanel{
 
@@ -61,9 +62,9 @@ public class VideoIndicator extends JPanel{
 
         // draw counts
         g.setColor(Color.BLUE);
-        g.drawString(Integer.toString(counts[0]), 0, 0);
-        g.drawString(Integer.toString(counts[1]), 270, 0);
-        g.drawString(Integer.toString(counts[2]), 540, 0);
+        g.drawString(Integer.toString(counts[0]), 0, 20);
+        g.drawString(Integer.toString(counts[1]), 270, 20);
+        g.drawString(Integer.toString(counts[2]), 540, 20);
         g.drawString(Integer.toString(counts[3]), 540, 230);
         g.drawString(Integer.toString(counts[4]), 540, 460);
         g.drawString(Integer.toString(counts[5]), 270, 460);
@@ -83,6 +84,7 @@ public class VideoIndicator extends JPanel{
 
 	public void addCount(int direction){
 		counts[direction]++;
+		//System.out.println(Arrays.toString(counts));
 	}
 
 	public void reset(){

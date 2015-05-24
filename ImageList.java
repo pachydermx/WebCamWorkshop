@@ -31,6 +31,8 @@ public class ImageList extends JPanel implements ActionListener{
 	private java.util.List<ImageItem> items = new ArrayList<ImageItem>();
 	private JButton reset;
 	public CameraDisplay cd;
+	private int width = 640;
+	private int height = 480;
 
 	public ImageList(){
 		// set layout
@@ -38,7 +40,7 @@ public class ImageList extends JPanel implements ActionListener{
 		this.setPreferredSize(new Dimension(384, 768));
 
 		// buttons
-		reset = new JButton("Capture");
+		reset = new JButton("Reset and Save");
 		this.add(reset);
 		
 		reset.addActionListener(this);
@@ -47,20 +49,66 @@ public class ImageList extends JPanel implements ActionListener{
 	
 	public void addImage(String label, Image img){
 		items.add(new ImageItem(label, img));
-		this.add(items.get(items.size() - 1));
 
-		// refresh to display new item
+		configure();
+	}
+
+	private void configure(){
+		// clear
+		this.removeAll();
+
+		// add button
+		this.add(reset);
+		// add items
+		for (int i = items.size() - 1; i >= Math.max(items.size() - 6, 0); i--){
+			this.add(items.get(i));
+		}
+
+		// refresh
 		this.revalidate();
+
 	}
 
 	public void actionPerformed(ActionEvent e){
 		if(e.getSource() == reset){
 			String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
-			this.addImage(timeStamp, resizeImage(cd.grabImage()));
+
+			// capture image
+			BufferedImage img = convert(cd.grabImage());
+
+			this.addImage(timeStamp, resizeImage(cropImage(img, 0, 0, 320, 240)));
 		}
 	}
 
+	public void captureImage(int direction){
+		String[] directions = {"⇖", "⇑", "⇗", "⇒", "⇘", "⇓", "⇙", "⇐"};
+		int[] x = {0, width/3, width/3*2, width/3*2, width/3*2, width/3, 0, 0};
+		int[] y = {0, 0, 0, height/3, height/3*2, height/3*2, height/3*2, height/3};
+
+		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
+
+		// capture image
+		BufferedImage img = convert(cd.grabImage());
+
+		this.addImage(timeStamp + directions[direction], resizeImage(cropImage(img, x[direction], y[direction], width/3, height/3)));
+	}
+
+	public BufferedImage cropImage(BufferedImage input, int x, int y, int width, int height){
+		BufferedImage output = input.getSubimage(x, y, width, height);
+		return output;
+	}
+
+	public BufferedImage convert(Image img){
+		BufferedImage bimg = new BufferedImage(img.getWidth(null), img.getHeight(null), BufferedImage.TYPE_INT_RGB);
+		Graphics2D bGr = bimg.createGraphics();
+		bGr.drawImage(img, 0, 0, null);
+		bGr.dispose();
+
+		return bimg;
+	}
+
 	public Image resizeImage(Image input){
+		// resize
 		BufferedImage thumb = new BufferedImage(160, 120, BufferedImage.TYPE_INT_RGB);
 		thumb.getGraphics().drawImage(input.getScaledInstance(160, 120, Image.SCALE_AREA_AVERAGING), 0, 0, 160, 120, null);
 		return thumb;

@@ -33,9 +33,10 @@ public class CameraDisplay extends JPanel{
     private JPanel videoPanel = null;
 
     // vi will be assigned by Main after launched
-    public VideoIndicator vi = null;
+    public static VideoIndicator vi = null;
+    public static ImageList il = null;
 
-    private int interval = 100;
+    private int interval = 50;
 
     public ImageProcessor ip = null;
     public MedianClustering ci = null;
@@ -44,6 +45,8 @@ public class CameraDisplay extends JPanel{
 
     private ProcessCircle pc;
     private static int[][] imageMatrix;
+
+    private BorderChecker bc;
 
 	
     String deviceName = "vfw:Microsoft WDM Image Capture (Win32):0";
@@ -59,7 +62,11 @@ public class CameraDisplay extends JPanel{
 
         // create image processor
         ip = new ImageProcessor();
-    	
+        bc = new BorderChecker(16, 12);
+
+        // configure
+        bc.cd = this;
+
 		try{
 			player = Manager.createRealizedPlayer(mediaLocator);
 			component = player.getVisualComponent();
@@ -89,6 +96,11 @@ public class CameraDisplay extends JPanel{
         return img;
     }
 
+    public static void callCapture(int direction){
+        if(il != null){
+            il.captureImage(direction);
+        }
+    }
 
     private class ProcessCircle extends Thread{
 
@@ -96,6 +108,10 @@ public class CameraDisplay extends JPanel{
 
             try{
                 Thread.sleep(5000);
+
+                // configure image processor
+                bc.vi = vi;
+        
                 while (true){
 
                     // wait for next circle
@@ -115,14 +131,17 @@ public class CameraDisplay extends JPanel{
                     ci.doClustering();
                     java.util.List<Cluster> listCluster = ci.getCluster();
                     int cluster_x, cluster_y;
-                    for (Cluster c : listCluster){
-                        cluster_x = (int)c.getX();
-                        cluster_y = (int)c.getY();
+                    if (listCluster.size() < 5){
+                        for (Cluster c : listCluster){
+                            cluster_x = (int)c.getX();
+                            cluster_y = (int)c.getY();
 
-                        vi.setClusterMark(cluster_x, cluster_y);
+                            vi.setClusterMark(cluster_x, cluster_y);
+
+                            // check border
+                            bc.addPoint(cluster_x, cluster_y);
+                        }
                     }
-
-                    // check border
 
 
 
