@@ -5,6 +5,7 @@ public class BorderChecker{
 	public VideoIndicator vi;
 	public CameraDisplay cd;
 
+	// cooler
 	private int pause = 10;
 
 	public BorderChecker(int width, int height){

@@ -27,6 +27,14 @@ public class VideoIndicator extends JPanel{
 		counts = new int[8];
 	}
 
+	public int[] grabCounts(){
+		int[] result = new int[8];
+		System.arraycopy(counts, 0, result, 0, counts.length);
+		counts = new int[8];
+		repaint();
+		return result;
+	}
+
 	@Override
 	protected void paintComponent(Graphics g){
 		super.paintComponent(g);
@@ -63,11 +71,11 @@ public class VideoIndicator extends JPanel{
         // draw counts
         g.setColor(Color.BLUE);
         g.drawString(Integer.toString(counts[0]), 0, 20);
-        g.drawString(Integer.toString(counts[1]), 270, 20);
-        g.drawString(Integer.toString(counts[2]), 540, 20);
-        g.drawString(Integer.toString(counts[3]), 540, 230);
-        g.drawString(Integer.toString(counts[4]), 540, 460);
-        g.drawString(Integer.toString(counts[5]), 270, 460);
+        g.drawString(Integer.toString(counts[1]), 290, 20);
+        g.drawString(Integer.toString(counts[2]), 580, 20);
+        g.drawString(Integer.toString(counts[3]), 580, 230);
+        g.drawString(Integer.toString(counts[4]), 580, 460);
+        g.drawString(Integer.toString(counts[5]), 290, 460);
         g.drawString(Integer.toString(counts[6]), 0, 460);
         g.drawString(Integer.toString(counts[7]), 0, 230);
 
@@ -85,6 +93,7 @@ public class VideoIndicator extends JPanel{
 	public void addCount(int direction){
 		counts[direction]++;
 		//System.out.println(Arrays.toString(counts));
+		repaint();
 	}
 
 	public void reset(){

@@ -53,6 +53,7 @@ public class Main extends JFrame{
         cd.vi = vi;
         cd.il = il;
         il.cd = cd;
+        il.vi = vi;
 
         lc.add(cd, BorderLayout.NORTH);
         lc.add(cp, BorderLayout.SOUTH);

@@ -33,6 +33,7 @@ public class ImageList extends JPanel implements ActionListener{
 	public CameraDisplay cd;
 	private int width = 640;
 	private int height = 480;
+	public VideoIndicator vi;
 
 	public ImageList(){
 		// set layout
@@ -72,6 +73,13 @@ public class ImageList extends JPanel implements ActionListener{
 	public void actionPerformed(ActionEvent e){
 		if(e.getSource() == reset){
 			items.clear();
+			configure();
+
+	        FileEdit fe = new FileEdit();
+	        fe.setName("result.txt");
+			String timeStamp = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").format(new Date());
+
+	        fe.addLog(timeStamp + " " + Arrays.toString(vi.grabCounts()));
 		}
 	}
 
@@ -80,7 +88,7 @@ public class ImageList extends JPanel implements ActionListener{
 		int[] x = {0, width/3, width/3*2, width/3*2, width/3*2, width/3, 0, 0};
 		int[] y = {0, 0, 0, height/3, height/3*2, height/3*2, height/3*2, height/3};
 
-		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
+		String timeStamp = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").format(new Date());
 
 		// capture image
 		BufferedImage img = convert(cd.grabImage());

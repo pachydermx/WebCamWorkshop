@@ -71,6 +71,7 @@ public class CameraDisplay extends JPanel{
             }
         }
 
+
         // create image processor
         ip = new ImageProcessor();
         bc = new BorderChecker(16, 12);
