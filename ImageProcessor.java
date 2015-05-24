@@ -46,7 +46,7 @@ public class ImageProcessor extends JPanel{
     private int[] avgOutput;
     private int[] deltaOutput;
 
-	public int[] process(Image img){
+	public int[][] process(Image img){
 		if (firstRun == 1){
 			// get basic info of image
 			imgWidth = img.getWidth(null);
@@ -105,14 +105,27 @@ public class ImageProcessor extends JPanel{
         		if (delta < threshold){
         			deltaOutput[y * (imgWidth / filterRadious) + x] = 0;
         		} else {
-        			deltaOutput[y * (imgWidth / filterRadious) + x] = delta;
+        			deltaOutput[y * (imgWidth / filterRadious) + x] = 10;
         		}
 
         		avgOutput[y * (imgWidth / filterRadious) + x] = avg;
         	}
         }
 
-        return deltaOutput;
+        return transform_to_2darray(deltaOutput, imgWidth / filterRadious);
+	}
+
+	public int[][] transform_to_2darray(int[] input_array, int width){
+		int height = input_array.length / width;
+		int[][] output_array = new int[width][height];
+		for (int i = 0, x = 0, y = 0; i < input_array.length; i++, x++){
+			if ( x == width ){
+				x = 0;
+				y++;
+			}
+			output_array[x][y] = input_array[i];
+		}
+		return output_array;
 	}
 
     public int RGBtoGray(int rgb_value){

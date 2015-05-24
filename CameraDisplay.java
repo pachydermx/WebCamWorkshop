@@ -35,14 +35,15 @@ public class CameraDisplay extends JPanel{
     // vi will be assigned by Main after launched
     public VideoIndicator vi = null;
 
-    private int interval = 100;
+    private int interval = 1000;
 
     public ImageProcessor ip = null;
+    public MedianClustering ci = null;
 
     private JLayeredPane layeredPane;
 
     private ProcessCircle pc;
-    private static int[] imageMatrix;
+    private static int[][] imageMatrix;
 
 	
     String deviceName = "vfw:Microsoft WDM Image Capture (Win32):0";
@@ -96,9 +97,32 @@ public class CameraDisplay extends JPanel{
             try{
                 Thread.sleep(5000);
                 while (true){
+
                     // wait for next circle
                     Thread.sleep(interval);
+
+                    // reset vi
+                    vi.reset();
+
+                    // get differencial matrix
                     imageMatrix = ip.process(grabImage());
+
+                    // get cluster
+                    ci = new MedianClustering();
+
+                    ci.setArray(imageMatrix);
+                    ci.setThreshold(2);
+                    ci.doClustering();
+                    java.util.List<Cluster> listCluster = ci.getCluster();
+                    int cluster_x, cluster_y;
+                    for (Cluster c : listCluster){
+                        cluster_x = (int)c.getX();
+                        cluster_y = (int)c.getY();
+
+                        vi.setClusterMark(cluster_x, cluster_y);
+                    }
+
+
                     if (vi != null){
                         vi.setMatrix(imageMatrix);
                     }
