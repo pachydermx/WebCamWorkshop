@@ -65,7 +65,7 @@ public class ControlPanel extends JPanel implements MouseMotionListener, MouseLi
 		state_display.setLocation(0, 40);
 
 		// configure ccc
-		ccc = new CameraControlCommunicator();
+		ccc = new CameraControlCommunicator(false);
 	}
 
 	public void mouseDragged(MouseEvent e){

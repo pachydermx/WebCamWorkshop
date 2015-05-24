@@ -59,7 +59,7 @@ public class Main extends JFrame{
         this.add(il, BorderLayout.EAST);
 
         this.setGlassPane(vi);
-        //vi.setVisible(true);
+        vi.setVisible(true);
         // display window
         this.setVisible(true);
 
