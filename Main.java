@@ -31,9 +31,9 @@ public class Main extends JFrame{
     private ImageList il = null;
     private VideoIndicator vi = null;
 
-    private int width = 320;
-    private int height = 240;
-    private int block = 20;
+    private int width = 640;
+    private int height = 480;
+    private int block = 40;
 
     public Main(){
         // init objects

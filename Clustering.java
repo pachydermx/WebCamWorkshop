@@ -45,10 +45,10 @@ abstract class Clustering{
         return c.getPoints();
     }
 
-    public int[] getPointXY(Cluster c){
-        int[] result = new int[2];
-        result[0] = 0;
-        result[1] = 1;
+    public double[] getPointXY(Cluster c){
+        double[] result = new double[2];
+        result[0] = c.getX();
+        result[1] = c.getY();
         return result;
     }
 
